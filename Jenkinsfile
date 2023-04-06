@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("Git Checkout"){
             steps{
-                git url:"https://github.com/javahometech/hr-api-multi"
+                git url:"https://github.com/javahometech/hr-api-multi", branch: "main"
             }
         }
         stage("Maven Build"){
